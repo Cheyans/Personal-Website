@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.button{
+  float: left;
+  box-sizing: border-box;
+
+  transition: 0.3s ease all;
+  text-align: center;
+  position: fixed;
+  cursor: pointer;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5vw;
+  color:white;
+
+  width: 8vw;
+  height: 4vw;
+  box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.3);
+}
+
+.button:hover{
+  transition: 0.3s ease all;
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+#About {
+  background-color: #189FFF;
+  position: fixed;
+  top: 10%;
+  left: 27.5%;
+  transform: translate(-50%, -50%);
+}
+
+#Projects {
+  background-color: #FF440D;
+  top: 10%;
+  left: 42.5%;
+  transform: translate(-50%, -50%);
+}
+
+#Blog {
+  background-color: #14C239;
+  top: 10%;
+    left: 57.5%;
+  transform: translate(-50%, -50%);
+}
+
+#Contact {
+  background-color: #9121E8;
+  top: 10%;
+  left: 72.5%;
+  transform: translate(-50%, -50%);
+}

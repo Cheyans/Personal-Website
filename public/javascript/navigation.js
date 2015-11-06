@@ -1,5 +1,4 @@
 var btn = $('.button');
-var background = $('.background');
 var prevBtn;
 
 var width = 0;
@@ -23,14 +22,19 @@ btn.click(function(e) {
   //clean & create circle
   btn.removeClass('current');
   $(this).addClass('current');
-  var circle = $("<div unselectable='on' id='circle'></div>");
-  background.append(circle);
+  var circle = $("<div unselectable='on' id='circle'> This is text</div>");
 
-  //change button shadow
+  $('.background').append(circle);
+
+  //change button active/inactive css
   $('.button').css({
-    "box-shadow": "0 3px 17px 0 rgba(0, 0, 0, 0.3)"
+    "box-shadow": "0 3px 17px 0 rgba(0, 0, 0, 0.3)",
+    "cursor": "pointer"
   })
-  e.target.style.boxShadow = "0 3px 17px 0 rgba(0, 0, 0, 0)";
+  $(this).css({
+    "boxShadow": "0 0 0 0 rgba(0, 0, 0, 0)",
+    "cursor": "default"
+  });
 
   circle.css({
     position: 'absolute',
@@ -38,7 +42,7 @@ btn.click(function(e) {
     width: 0,
     height: 0,
     "border-radius": "50%",
-    //position of button
+    //position of click button
     left: $(this).css('left'),
     top:  $(this).css('top'),
     'margin-left': 0,

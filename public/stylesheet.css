@@ -11,6 +11,8 @@ body{
   background-color: #34495e;
 }
 
+/* ----- Buttons ---- */
+
 .button{
   float: left;
   box-sizing: border-box;
@@ -25,7 +27,6 @@ body{
   align-items: center;
   font-family: 'Lato';
   font-size: 1.1vw;
-  font-weight: 200;
   color:white;
 
   width: 8vw;
